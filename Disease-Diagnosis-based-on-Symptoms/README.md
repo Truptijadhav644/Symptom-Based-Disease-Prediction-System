@@ -13,8 +13,8 @@ System Based Disease Prediction System is a smart health assistant that predicts
 
 ##  ML Algorithms
 
-- ✅ Random Forest (Main model)  
-- 🧪 Naive Bayes (Used for testing)
+-  Random Forest (Main model)  
+-  Naive Bayes (Used for testing)
 
 ##  Tech Stack
 
