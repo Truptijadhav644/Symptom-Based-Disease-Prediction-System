@@ -1,0 +1,178 @@
+/* Updated & Corrected Custom CSS */
+:root {
+    --primary-color: #4aa8c5;
+    --primary-dark: #3a8bac;
+    --light-bg: #e6f4f9;
+    --text-dark: #2c3e50;
+    --text-light: #7f8c8d;
+    --white: #ffffff;
+}
+
+/* Base Styles */
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif !important;
+    background-color: var(--light-bg) !important;
+    color: var(--text-dark) !important;
+    line-height: 1.6 !important;
+}
+
+/* Navigation */
+.navbar {
+    padding: 0.7rem 0 !important;
+    background-color: var(--primary-color) !important;
+}
+
+.navbar-brand, .nav-link {
+    color: var(--white) !important;
+}
+
+/* Hero Section */
+.hero-section {
+    background: linear-gradient(to right, #6dd5ed, var(--primary-color)) !important;
+    padding: 2rem 0 !important;
+    margin-bottom: 1.5rem !important;
+    color: var(--white) !important;
+}
+
+.search-container {
+    background-color: var(--white) !important;
+    border-radius: 50px !important;
+    padding: 0.5rem 1rem !important;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.1) !important;
+}
+
+/* Cards */
+.card {
+    border: none !important;
+    border-radius: 0.5rem !important;
+    box-shadow: 0 2px 15px rgba(0, 0, 0, 0.08) !important;
+    margin-bottom: 1rem !important;
+    background-color: var(--white) !important;
+}
+
+.card-header {
+    background-color: var(--primary-color) !important;
+    color: var(--white) !important;
+    border-bottom: none !important;
+    border-radius: 0.5rem 0.5rem 0 0 !important;
+}
+
+/* Symptoms */
+.form-check {
+    padding: 0.6rem 1rem !important;
+    margin: 0.2rem 0 !important;
+    border-radius: 0.3rem !important;
+    transition: all 0.2s !important;
+    background-color: var(--white) !important;
+    border: 1px solid #e0e0e0 !important;
+}
+
+.form-check:hover {
+    background-color: rgba(74, 168, 197, 0.08) !important;
+    border-color: var(--primary-color) !important;
+}
+
+.form-check-input:checked + .form-check-label {
+    color: var(--primary-dark) !important;
+    font-weight: 600 !important;
+}
+
+.form-check-label {
+    color: var(--text-dark) !important;
+}
+
+/* Results */
+.disease-result {
+    color: var(--primary-dark) !important;
+    font-size: 1.2rem !important;
+    font-weight: 700 !important;
+}
+
+.symptom-pill {
+    display: inline-block !important;
+    background-color: rgba(74, 168, 197, 0.15) !important;
+    color: var(--primary-dark) !important;
+    padding: 0.3rem 0.8rem !important;
+    border-radius: 50px !important;
+    margin: 0.2rem !important;
+    font-size: 0.85rem !important;
+    font-weight: 500 !important;
+}
+
+/* Buttons */
+.btn-primary {
+    background-color: var(--primary-color) !important;
+    border-color: var(--primary-color) !important;
+    color: var(--white) !important;
+    padding: 0.6rem 1.75rem !important;
+    font-weight: 500 !important;
+    letter-spacing: 0.5px !important;
+}
+
+.btn-primary:hover {
+    background-color: var(--primary-dark) !important;
+    border-color: var(--primary-dark) !important;
+    transform: translateY(-1px) !important;
+    box-shadow: 0 3px 10px rgba(0,0,0,0.1) !important;
+    color: var(--white) !important;
+}
+
+/* Headings */
+h1, h2, h3, h4, h5, h6 {
+    color: var(--text-dark) !important;
+    font-weight: 600 !important;
+}
+
+.text-muted {
+    color: var(--text-light) !important;
+}
+
+/* Animations */
+@keyframes fadeIn {
+    from { opacity: 0; transform: translateY(10px); }
+    to { opacity: 1; transform: translateY(0); }
+}
+
+.fade-in {
+    animation: fadeIn 0.4s ease-out forwards !important;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    .hero-section {
+        padding: 1.5rem 0 !important;
+    }
+    
+    .hero-section h1 {
+        font-size: 1.8rem !important;
+    }
+    
+    #symptoms-container {
+        max-height: 400px !important;
+        overflow-y: auto !important;
+        padding-right: 5px !important;
+    }
+
+    .form-check {
+        padding: 0.5rem !important;
+    }
+}
+
+/* Scrollbar */
+::-webkit-scrollbar {
+    width: 8px;
+}
+
+::-webkit-scrollbar-track {
+    background: #f1f1f1;
+    border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb {
+    background: #c1c1c1;
+    border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: #a8a8a8;
+}
